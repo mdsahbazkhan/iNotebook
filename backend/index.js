@@ -4,14 +4,14 @@ var cors = require('cors')
 connectToMongo(); 
 const app = express()
 const port =  5006;
-const corsOptions = {
-  origin: 'https://inotebook49.netlify.app', // Replace with your frontend URL for local development
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type'],
-};
+// const corsOptions = {
+//   origin: 'https://inotebook49.netlify.app', // Replace with your frontend URL for local development
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   allowedHeaders: ['Content-Type'],
+// };
 
 // Apply CORS middleware
-app.use(cors(corsOptions));
+app.use(cors();
 
 app.use(express.json())
 //Available Routes
